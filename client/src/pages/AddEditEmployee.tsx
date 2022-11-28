@@ -124,7 +124,7 @@ const AddEditEmployee = () => {
         <AddContainer>
           <Form onSubmit={handleSubmit}>
             <Header>
-              <h4>Add Employee </h4>
+              <h4>{!editMode ? "Add Employee" : "Update Employee"} </h4>
             </Header>
             <InputContainer>
               <label htmlFor="name">Name :</label>
