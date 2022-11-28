@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:3001/api/v1/employee";
+const baseUrl = "https://addis-api.onrender.com/api/v1/employee";
 
 export const createEmployeeApi = async (employee) => {
   return await axios.post(`${baseUrl}`, employee);
